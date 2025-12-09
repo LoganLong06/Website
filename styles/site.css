@@ -91,8 +91,8 @@ footer nav {
 
 img .logoImage {
 
-    max-width: 100%;
-    height: auto;
+    max-inline-size: 100%;
+    block-size: auto;
     padding: 0;
     display: block;
 }
@@ -100,9 +100,9 @@ img .logoImage {
 
 #banner header img,
 header>img {
-    width: auto;
-    max-width: 150px;
-    height: auto;
+    inline-size: auto;
+    max-inline-size: 150px;
+    block-size: auto;
     align-self: center;
 }
 
@@ -116,8 +116,8 @@ header>img {
 }
 
 .homeImages img {
-    width: 100%;
-    max-width: 100%;
+    inline-size: 100%;
+    max-inline-size: 100%;
     border-radius: 10px;
     box-shadow: var(--primary-dark) 0px 4px 6px;
 }
@@ -127,18 +127,18 @@ header>img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    inline-size: 100%;
     gap: 1vi;
 }
 
 .bookRow .bookPopUp {
-    max-width: 65%;
+    max-inline-size: 65%;
     margin: 0;
 }
 
 .bookRow img {
-    max-width: 350px;
-    width: 35%;
+    max-inline-size: 350px;
+    inline-size: 35%;
     border-radius: 10px;
     box-shadow: var(--primary-dark) 0px 4px 6px;
 }
@@ -194,8 +194,8 @@ p {
     box-shadow: var(--primary-light) 0px 4px 6px;
     border: var(--primary-dark) 4px solid;
     color: var(--text-color);
-    width: 100%;
-    max-width: 100%;
+    inline-size: 100%;
+    max-inline-size: 100%;
 }
 
 main {
@@ -214,7 +214,7 @@ nav ul {
 
 #rightOfParagraph {
     float: right;
-    max-width: 300px;
+    max-inline-size: 300px;
     margin: 1vi;
     border-radius: 10px;
     box-shadow: var(--primary-light) 0px 4px 6px;
@@ -228,7 +228,7 @@ nav ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    inline-size: 100%;
     gap: 1vi;
 
     p {
@@ -242,14 +242,14 @@ nav ul {
 
 #LoganLovePicture {
     
-    width: 100%;
-    max-width: 100%;
+    inline-size: 100%;
+    max-inline-size: 100%;
     display: flex;
     justify-content: center;
 
     img {
-        width: 50%;
-        height: 50vi;
+        inline-size: 50%;
+        block-size: 50vi;
         border-radius: var(--image-radius);
         box-shadow: var(--primary-light) 0px 4px 6px;
         margin: 5vi;
