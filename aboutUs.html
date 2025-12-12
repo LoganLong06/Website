@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Long Photography - Index</title>
+    <title>Long Photography - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +24,19 @@
             </div>
         </header>
         <nav>
-            <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="./aboutUs.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="./portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="./booking.html">Booking</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="ourStudio.html">Our Studio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="./ourStudio.html">Our Studio</a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
+            </ul>
         </nav>
 
     </div>
-    <main>
-        <div>
+    <main id="aboutUs">
+        <div id="Mission">
             <h2>Our Mission</h2>
             <p>Long Photography is a hot new business eager to start capturing life's greatest memories for clients.
                 This website will provide clients with information about the company, booking options for on venue and
@@ -39,23 +44,78 @@
             </p>
         </div>
         <div>
-            <h2>Our Photographer</h2>
-            <p>Logan Love is a very talented and experienced photographer, he has work on many different projects all
-                around the globe.
-                <br>His skills include, but are not limited to:
-            </p>
-            <ul class="skills">
-                <li>Keen eye for details</li>
-                <li>Excellent communication skills</li>
-                <li>Proficient in photo editing software</li>
-                <li>Ability to work under pressure</li>
-                <li>Creative vision</li>
-            </ul>
-            <div id="LoganLovePicture">
-                <img src="./images/LoganLove.jpg" alt="Photographer Picture">
+            <h2>Our Staff</h2>
+            <div id="Staff">
+                <div>
+                    <h3>The Photographer</h3>
+                    <p>Logan Love is a very talented and experienced photographer, he has work on many different
+                        projects all
+                        around the globe.
+                        <br>His skills include, but are not limited to:
+                    </p>
+                    <ul class="skills">
+                        <li>Keen eye for details</li>
+                        <li>Excellent communication skills</li>
+                        <li>Proficient in photo editing software</li>
+                        <li>Ability to work under pressure</li>
+                        <li>Creative vision</li>
+                    </ul>
+                    <div class="staffPhotos">
+                        <img src="./images/LoganLove.jpg" alt="Photographer Picture">
+                    </div>
+                </div>
+                <div>
+                    <h3>The Assistant</h3>
+                    <p>Jerry Xu is an enthusiastic photography assistant, He has helped on many different shoots and
+                        projects.
+                        <br>His skills include, but are not limited to:
+                    </p>
+                    <ul class="skills">
+                        <li>Strong organizational skills</li>
+                        <li>Attention to detail</li>
+                        <li>Ability to work in a team</li>
+                        <li>Flexibility and adaptability</li>
+                        <li>Knowledge of photography equipment</li>
+                    </ul>
+                    <div class="staffPhotos">
+                        <img src="./images/JerryXu.jpg" alt="Assistant Picture">
+                    </div>
+                </div>
+                <div>
+                    <h3>The Studio Manager</h3>
+                    <p>Bryce Kalani is an experienced studio manager, He has managed many different photography
+                        studios.
+                        <br>His skills include, but are not limited to:
+                    </p>
+                    <ul class="skills">
+                        <li>Excellent leadership skills</li>
+                        <li>Strong communication skills</li>
+                        <li>Ability to manage budgets</li>
+                        <li>Knowledge of photography industry trends</li>
+                        <li>Customer service skills</li>
+                    </ul>
+                    <div class="staffPhotos">
+                        <img src="./images/BryceKalani.jpg" alt="Studio Manager Picture">
+                    </div>
+                </div>
+                <div>
+                    <h3>The Editor</h3>
+                    <p>Xavier Beaulieu is a skilled photo editor, He has edited many different photography projects.
+                        <br>His skills include, but are not limited to:
+                    </p>
+                    <ul class="skills">
+                        <li>Proficient in photo editing software</li>
+                        <li>Attention to detail</li>
+                        <li>Ability to work under tight deadlines</li>
+                        <li>Creative vision</li>
+                        <li>Strong communication skills</li>
+                    </ul>
+                    <div class="staffPhotos">
+                        <img src="./images/XavierBeaulieu.jpg" alt="Editor Picture">
+                    </div>
+                </div>
             </div>
-
-
+        </div>
         </div>
     </main>
     <footer>
@@ -66,9 +126,7 @@
             <a href="./booking.html">Booking</a><br>
             <a href="ourStudio.html">Our Studio</a><br>
         </nav>
-        <small>
-           Copyright &copy; 2025, Photos by S&G Photography, Logo designed by Logan Long, selphie photo by Logan Long.
-        </small>
+
         <address>
             <p>
                 325, boul. de la Cité-des-Jeunes<br>
@@ -79,6 +137,11 @@
                 <a href="mailto:2533513@cegep-heritage.qc.ca">2533513@cegep-heritage.qc.ca</a><br>
             </p>
         </address>
+
+        <small>
+            Copyright &copy; 2025, Photos by S&G Photography, Logo designed by Logan Long, selphie photo by Logan Long.
+            Domain name: longphotography.com
+        </small>
 
     </footer>
 </body>

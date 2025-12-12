@@ -1,3 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+
+
 :root {
     --primary-dark: #FF00C8;
     --primary-light: #FF80E4;
@@ -5,7 +8,10 @@
     --text-color: black;
     --site-background: lch(68.55% 43.62 343.96 / 0.503);
     --image-radius: 8px;
-
+    --bs-primary: var(--primary-dark);
+    --bs-primary-rgb: 255, 0, 200;
+    --bs-btn-bg-color: var(--primary-dark);
+    --bs-btn-border-color: var(--primary-dark);
 }
 
 body {
@@ -33,8 +39,7 @@ header {
     flex-wrap: wrap;
     box-shadow: var(--primary-light) 0px 4px 6px;
     border-radius: var(--image-radius);
-
-
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
 }
 
@@ -63,11 +68,13 @@ a:visited {
 
 footer {
     border-block: 10px solid var(--primary-dark);
-    display: flex;
+
     justify-content: space-between;
     background-color: var(--primary-light);
-    padding: 20px;
+    padding: 3em;
     align-items: flex-end;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+
 
 }
 
@@ -79,14 +86,14 @@ address {
 }
 
 small {
-    vertical-align: bottom;
-    align-items: center;
+    display: block;
     text-align: center;
-
+    margin-top: 10px;
 }
 
 footer nav {
     margin: 0 0 1vi 0;
+    text-align: center;
 }
 
 img .logoImage {
@@ -151,8 +158,13 @@ h4 {
 h1 {
     padding: 0;
     margin: 0em 1em 0.5em 1em;
-    font-size: clamp(1.5em, 5vw, 3em);
+    font-size: clamp(1em, 5vw, 3em);
 
+}
+
+h3 {
+    text-align: center;
+    font-size: clamp(1em, 5vw, 2.5em);
 }
 
 #logo {
@@ -163,6 +175,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: clamp(0.75em, 5vw, 3em);
 }
 
 p {
@@ -196,6 +209,19 @@ p {
     color: var(--text-color);
     inline-size: 100%;
     max-inline-size: 100%;
+
+    :hover {
+        background-color: var(--primary-dark);
+        border-radius: var(--image-radius);
+        color: var(--secondary-light);
+        text-shadow: -2px -2px 10px #fff, 0 0 20px var(--primary-dark), 0 0 40px var(--primary-dark), 0 0 60px var(--primary-dark), 0 0 80px var(--primary-dark), 0 0 100px var(--primary-dark);
+    }
+}
+
+.bookRow :hover {
+    background-color: var(--primary-dark);
+    border-radius: var(--image-radius);
+    color: var(--secondary-light);
 }
 
 main {
@@ -210,6 +236,11 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    font-size: clamp(0.5em, 3vw, 2em);
+
+    li {
+        margin: 0 1vi;
+    }
 }
 
 #rightOfParagraph {
@@ -240,8 +271,8 @@ nav ul {
     }
 }
 
-#LoganLovePicture {
-    
+.staffPhotos {
+
     inline-size: 100%;
     max-inline-size: 100%;
     display: flex;
@@ -261,4 +292,167 @@ nav ul {
 ul {
     list-style: none;
     text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: var(--primary-dark) 0px 4px 6px;
+    border-radius: var(--image-radius);
+    overflow: hidden;
+    border-collapse: collapse;
+    inline-size: 90%;
+    max-inline-size: 90%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid var(--primary-dark);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-dark) !important;
+    border: 1px solid black;
+}
+
+td {
+    background-color: var(--secondary-light) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--text-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.form-check-input:focus {
+    border-color: var(--primary-dark);
+    box-shadow: var(--primary-light) 0px 4px 6px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-dark);
+    box-shadow: var(--primary-light) 0px 4px 6px;
+}
+
+.form-select:focus {
+    border-color: var(--primary-dark);
+    box-shadow: var(--primary-light) 0px 4px 6px;
+}
+
+.siteLinks {
+    list-style: none;
+    text-decoration: underline;
+
+    :visited {
+        color: var(--text-color)
+    }
+
+    li {
+        ::before {
+            content: "🩷";
+        }
+
+        text-align: left;
+    }
+}
+
+p a {
+    text-decoration: underline;
+
+    :visited {
+        color: var(--text-color);
+    }
+}
+
+blockquote {
+    border-left: 5px solid var(--primary-dark);
+    margin: 1vi;
+    padding: 1vi;
+    background-color: var(--secondary-light);
+    box-shadow: var(--primary-light) 0px 4px 6px;
+}
+
+blockquote::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+video {
+    border-radius: var(--image-radius);
+    box-shadow: var(--primary-light) 0px 4px 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .bookRow {
+        flex-direction: row;
+    }
+
+    #Staff {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #portfolioImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vi;
+    }
+
+    #ourStudio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vi;
+
+        img {
+            inline-size: 80%;
+            block-size: 80%;
+        }
+    }
+
+    #StudioDescription {
+        ul {
+            font-size: clamp(1em, 3vw, 1.5em);
+        }
+
+        li {
+            margin-block: 2em;
+        }
+
+        h2 {
+            margin-block: 20%;
+            font-size: clamp(1.5em, 4vw, 2.5em);
+        }
+    }
+
+    #testimonial {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vi;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
